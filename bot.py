@@ -9,7 +9,8 @@ load_dotenv()
 
 
 
-intents = discord.Intents.all()
+intents = discord.Intents.default()
+intents.members = True
 client = commands.Bot(command_prefix='!', help_command=None, intents=intents)
 
 
